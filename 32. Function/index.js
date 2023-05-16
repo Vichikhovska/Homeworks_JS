@@ -24,9 +24,19 @@
 //min 2
 // Створи функцію, яка буде виводити кількість переданих їй аргументів.
 
-const calcArguments = function () {
-  return(arguments.length)
-};
+// const calcArguments = function () {
+//   return(arguments.length)
+// };
+
+//OR
+
+const calcArguments = [10, 20, 30];  
+
+function sum (num1, num2, num3) {
+  return(num1 + num2 + num3) 
+}
+
+console.log(sum(...calcArguments))
 
 //min 3
 /* Напиши функцію, яка приймає 2 числа і повертає :
@@ -50,15 +60,15 @@ getNumber();
 
 //OR
 
-const getNumber = (number1, number2) => {
-  if (number1 < number2) {
-    return -1;  
-  } else if (number1 > number2) {
-    return 1;
-  } else if (number1 === number2) {
-    return 0;
-  }
-};
+// const getNumber = (number1, number2) => {
+//   if (number1 < number2) {
+//     return -1;  
+//   } else if (number1 > number2) {
+//     return 1;
+//   } else if (number1 === number2) {
+//     return 0;
+//   }
+// };
 
 //min 4
 // Напиши функцію, яка обчислює факторіал переданого їй числа.
@@ -86,7 +96,6 @@ console.log(merger (1, 4, 9));
 /* Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. 
 Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата. */
 
-
 const calcArea = (width, length) => {
   if (width !== length) {
      return width * length;
@@ -96,27 +105,43 @@ const calcArea = (width, length) => {
 }
 console.log(calcArea(4, 4))
 
-// normal 1
-/* Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число, 
-яке дорівнює сумі всіх своїх дільників. */
+// // normal 1
+// /* Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число, 
+// яке дорівнює сумі всіх своїх дільників. */
 
 function findPerfect(number) {
-let sum = 0;
-for (let index = 0; index <= (number / 2); index++) {
-  if ((number % index) == 0) {
-    sum += index;
-  }
-}
+  let sum = 0;
 
-if (sum === number && sum !== 0) {
-  return true;
-} else false
+  for (let index = 0; index <= (number / 2); index++) {
+    if ((number % index) == 0) {
+      sum += index;
+    }
+  }
+
+  if (sum === number && sum !== 0) {
+    return true;
+  } else false
 };
 
 findPerfect();
 
-// normal 2
-/* Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, 
-які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим. */
+// // normal 2
+// /* Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, 
+// які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим. */
 
-//i don`t know
+const min = +prompt("Enter minimal number");
+const max = +prompt("Enter max number");
+const list = [];
+
+  for (let index = min; index <= max; index++) {
+    if(findPerfect(index)) {
+      list.push(index);
+    }
+  if(findPerfect.length = 0) {
+    console.log("There is no perfect number");
+  }
+  if (max < min) {
+    console.log("Minimal number should be bigger max number");
+  }
+}
+console.log(list);
