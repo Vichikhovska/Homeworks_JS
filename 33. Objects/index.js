@@ -4,29 +4,30 @@
   і наступні методи для роботи з цим об'єктом:
     1. Метод, який виводить на екран інформацію про автомобіль.*/
 
-// const myCar = {
-//   producer: "Hundai",
-//   model: "Tucson",
-//   year: 2017,
-//   fast: 90,
-//   container: 20,
-//   fuelConsumption: 5,
-//   driver: "ledy"
-// }
-// myCar.driverTwo = "Ivan";   //2. Додавання ім’я водія у список
+const myCar = {
+  producer: "Hundai",
+  model: "Tucson",
+  year: 2017,
+  fast: 90,
+  container: 20,
+  fuelConsumption: 5,
+  driver: "ledy"
+}
+myCar.driverTwo = "Ivan";   //2. Додавання ім’я водія у список
 
-// console.log ("driverTwo" in myCar)  //3. Перевірка водія на наявність його ім’я у списку                         
-// // or
-// if (typeof myCar.driverTwo !== undefined) {
-//   console.log (true)
-// } else false
-// // or
-// console.log(myCar.hasOwnProperty("driverTwo"));
+console.log ("driverTwo" in myCar)  //3. Перевірка водія на наявність його ім’я у списку                         
+// or
+if (typeof myCar.driverTwo !== undefined) {
+  console.log (true)
+} else false
+// or
+console.log(myCar.hasOwnProperty("driverTwo"));
 
     /*4. Підрахунок необхідного часу та кількості палива для подолання переданої відстані 
     з середньою швидкістю. Враховуй, що через кожні 4 години дороги водієві необхідно робити перерву на 1 годину. */
 
-    
+// dont know
+
 // normal
 /*Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
     1. Для виведення часу на екран. */
