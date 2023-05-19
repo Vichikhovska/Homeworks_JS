@@ -47,9 +47,7 @@ const shopingList = [
     //min 1.2
     // Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
 
-    const justBougthProduct = (nameProduct) => {
-      
-    }
+
 
 // normal 1
 /*Видалення продукту зі списку (видалення повинно проводитися шляхом створення нового масиву, 
@@ -107,5 +105,6 @@ console.log (sumNotBougthProduct);
 
 const sortedList = shopingList.sort((firstItem, nextItem) => firstItem.sum - nextItem.sum);
 console.table(sortedList);
+
 const sortedListReverse = shopingList.sort((firstItem, nextItem) => nextItem.sum - firstItem.sum);
 console.table(sortedListReverse);
