@@ -49,7 +49,7 @@ const renderItem = (name) => {
 
 const inputSecond = document.querySelector(".lsn_input_song");
 let userInputSecond =null;
-input.addEventListener("input", e => userInputSecond = e.target.value);
+inputSecond.addEventListener("input", e => userInputSecond = e.target.value);
 console.log(inputSecond)
 
 const renderSong = (link) => {
