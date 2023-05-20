@@ -32,11 +32,13 @@ console.log(myCar.hasOwnProperty("driverTwo"));
 /*Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
     1. Для виведення часу на екран. */
 
-    let hours = +prompt("Enter hours");
-    let minutes = +prompt("Enter minutes");
-    let seconds = +prompt("Enter seconds");
+    const time = {
+      hours: +prompt("Enter hours"),
+      minutes: +prompt("Enter minutes"),
+      seconds: +prompt("Enter seconds"),
 
-    let time = (`${hours}:${minutes}:${seconds}`);
+      getTime() {console.log(`${hours}:${minutes}:${seconds}`)}
+    }
 
     //2. Зміни часу на передану кількість секунд.
     function countSeconds() {
