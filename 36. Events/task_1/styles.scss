@@ -1,0 +1,23 @@
+body {
+  max-width: 1440px;
+  background-color: rgb(211, 183, 236);
+}
+
+.textarea_box {
+  display: none;
+  width: 80%;
+  height: 200px;
+}
+
+.parent_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;  
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 700px;
+  
+  background-color: rgb(151, 119, 182);
+}

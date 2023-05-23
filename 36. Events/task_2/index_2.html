@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Сортування таблиці</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const table = document.getElementById('myTable');
+      const headers = table.querySelectorAll('th');
+
+      // Функція для отримання значень стовпця
+      function getColumnValues(colIndex) {
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        return rows.map(function(row) {
+          const cell = row.cells[colIndex];
+          return cell.dataset.value || cell.textContent;
+        });
+      }
+
+      // Функція для сортування даних
+      function sortColumn(colIndex, isNumeric) {
+        const values = getColumnValues(colIndex);
+        const sortedValues = isNumeric ? values.sort(function(a, b) {
+          return a - b;
+        }) : values.sort();
+        
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        rows.forEach(function(row, index) {
+          const cell = row.cells[colIndex];
+          cell.textContent = sortedValues[index];
+        });
+      }
+
+      // Додавання обробника події до заголовків стовпців
+      headers.forEach(function(header, index) {
+        header.addEventListener('click', function() {
+          const isNumeric = header.dataset.numeric === 'true';
+          sortColumn(index, isNumeric);
+        });
+      });
+    });
+  </script>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    
+    th {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>Ім'я</th>
+        <th data-numeric="true">Вік</th>
+        <th data-numeric="true">Зарплата</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Іван</td>
+        <td data-value="25">25</td>
+        <td data-value="2000">$2000</td>
+      </tr>
+      <tr>
+        <td>Марія</td>
+        <td data-value="32">32</td>
+        <td data-value="3500">$3500</td>
+      </tr>
+      <tr>
+        <td>Петро</td>
+        <td data-value="19">19</td>
+        <td data-value="1500">$1500</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
