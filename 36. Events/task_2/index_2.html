@@ -1,98 +1,57 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles_2.css">
 </head>
 <body>
-  
-</body>
-</html> -->
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Сортування таблиці</title>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const table = document.getElementById('myTable');
-      const headers = table.querySelectorAll('th');
-
-      // Функція для отримання значень стовпця
-      function getColumnValues(colIndex) {
-        const rows = Array.from(table.querySelectorAll('tbody tr'));
-        return rows.map(function(row) {
-          const cell = row.cells[colIndex];
-          return cell.dataset.value || cell.textContent;
-        });
-      }
-
-      // Функція для сортування даних
-      function sortColumn(colIndex, isNumeric) {
-        const values = getColumnValues(colIndex);
-        const sortedValues = isNumeric ? values.sort(function(a, b) {
-          return a - b;
-        }) : values.sort();
-        
-        const rows = Array.from(table.querySelectorAll('tbody tr'));
-        rows.forEach(function(row, index) {
-          const cell = row.cells[colIndex];
-          cell.textContent = sortedValues[index];
-        });
-      }
-
-      // Додавання обробника події до заголовків стовпців
-      headers.forEach(function(header, index) {
-        header.addEventListener('click', function() {
-          const isNumeric = header.dataset.numeric === 'true';
-          sortColumn(index, isNumeric);
-        });
-      });
-    });
-  </script>
-  <style>
-    table {
-      border-collapse: collapse;
-    }
-    
-    th, td {
-      border: 1px solid black;
-      padding: 5px;
-    }
-    
-    th {
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <table id="myTable">
+  <table class = "table_container">
     <thead>
-      <tr>
-        <th>Ім'я</th>
-        <th data-numeric="true">Вік</th>
-        <th data-numeric="true">Зарплата</th>
+      <tr class = "nameTable">
+        <th class = "product" onclick="sortTable(0)">Product</th>
+        <th class = "price" onclick="sortTable(1)">Price, $</th>
+        <th class = "quanity" onclick="sortTable(2)">Quantity</th>
+        <th class = "sum" onclick="sortTable(3)">Sum</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Іван</td>
-        <td data-value="25">25</td>
-        <td data-value="2000">$2000</td>
+      <tr class = "itemTable">
+        <td>Table</td>
+        <td>120</td>
+        <td>2</td>
+        <td>240</td>
       </tr>
-      <tr>
-        <td>Марія</td>
-        <td data-value="32">32</td>
-        <td data-value="3500">$3500</td>
+      <tr class = "itemTable">
+        <td>Chair</td>
+        <td>230</td>
+        <td>3</td>
+        <td>690</td>
       </tr>
-      <tr>
-        <td>Петро</td>
-        <td data-value="19">19</td>
-        <td data-value="1500">$1500</td>
+      <tr class = "itemTable">
+        <td>Sofa</td>
+        <td>540</td>
+        <td>2</td>
+        <td>1080</td>
+      </tr>
+      <tr class = "itemTable">
+        <td>Wardrobe</td>
+        <td>600</td>
+        <td>1</td>
+        <td>600</td>
+      </tr>
+      <tr class = "itemTable">
+        <td>Lamp</td>
+        <td>40</td>
+        <td>5</td>
+        <td>200</td>
       </tr>
     </tbody>
   </table>
+
+  <script src="index_2.js"></script>
 </body>
 </html>
+
