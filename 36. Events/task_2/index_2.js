@@ -21,11 +21,12 @@
 // sum.addEventListener('click', function() {
 //   sortTable(3);
 // }); 
+
 function sortTable(item) {
   let rows, index, x, y, needSwitch, switchCount = 0;
   const table = document.querySelector(".table_container");
-  const switching = true;
-  const direction = "ascending";
+  let switching = true;
+  let direction = "ascending";
 
   while (switching) {
     switching = false;
@@ -33,22 +34,22 @@ function sortTable(item) {
 
     for (index = 1; index < (rows.length - 1); index++) {
       needSwitch = false;
-        x = rows[index].querySelectorAll("TD")[item];
-        y = rows[index + 1].querySelectorAll("TD")[item];
+      x = rows[index].querySelectorAll("TD")[item];
+      y = rows[index + 1].querySelectorAll("TD")[item];
 
-        if (direction === "ascending") {
-          if (+(x.innerHTML) > +(y.innerHTML)) {
-            needSwitch = true;
-            break;
-          }
-        } else if (direction === "descending") {
-          if (+(x.innerHTML) < +(y.innerHTML)) {
-            needSwitch = true;
-            break;
-          }
+      if (direction === "ascending") {
+        if (+(x.innerHTML) > +(y.innerHTML)) {
+          needSwitch = true;
+          break;
         }
+      } else if (direction === "descending") {
+        if (+(x.innerHTML) < +(y.innerHTML)) {
+          needSwitch = true;
+          break;
+        }
+      }
     }
-    
+
     if (needSwitch) {
       rows[index].parentNode.insertBefore(rows[index + 1], rows[index]);
       switching = true;
@@ -61,6 +62,7 @@ function sortTable(item) {
     }
   }
 }
+
 
 
 
