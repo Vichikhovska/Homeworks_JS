@@ -16,7 +16,10 @@ h1, h2, h3,.menu_item, .foot_menu_item,
   color: var(--base-color-900);
 }
 
-h1 {color: var(--brown-light-color-300);}
+h1 {
+  width: 400px; 
+  color: var(--brown-light-color-300);
+}
 
 h1, h2 {
   font-weight: 700;
