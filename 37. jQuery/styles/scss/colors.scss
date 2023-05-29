@@ -1,0 +1,22 @@
+:root {
+  /* base colors */
+  --base-color-900:rgb(0, 0, 0);
+  --base-color-100:rgb(255, 255, 255);
+
+  /* base-second colors */
+
+  --brown-color-900:rgba(53, 49, 45, 1);
+  --arrow-inactive-color-800: rgba(32, 32, 32, 1);
+  --brown-light-color-300:rgba(248, 241, 234, 1);
+  --dot-inactive-color-200: rgba(248, 241, 234, 0.7);
+  --dot-inactive-color-100: rgba(202, 194, 186, 1);
+
+  /* tomato colors */
+  --tomato-color-900:rgba(198, 33, 0, 1);
+  --tomato-light-color-700: rgba(241, 106, 80, 1);
+
+  // breakpoints
+
+  --tablet-768:"768px";
+  --mobile-320:"320px";
+}

@@ -9,6 +9,8 @@
  */
 
 html {
+  margin: 0;
+  padding: 0;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -20,8 +22,15 @@ html {
  * Remove the margin in all browsers.
  */
 
+
+ * {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
+  padding: 0;
 }
 
 /**
@@ -221,7 +230,7 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 0;
 }
 
 /**
