@@ -1,4 +1,1 @@
-.swiper {
-  width: 100%;
-  max-width: 1400px;
-}
+.swiper,.swiper.third{width:100%;max-width:1400px}.scroll .swiper-pagination-bullet{width:20px;height:20px;background:var(--dot-inactive-color-100)}.scroll .swiper-pagination-bullet-active{background-color:var(--tomato-light-color-700)}.swiper.second{width:100%;max-width:1200px;display:-webkit-box;display:-ms-flexbox;display:flex}.swiper-button-next:after,.swiper-button-prev:after{content:""!important}.swiper.third{display:-webkit-box;display:-ms-flexbox;display:flex}.swiper-button-prev.partnr:after,.swiper-button-prev.partnr:after{content:""!important}.change:hover{stroke:var(--tomato-light-color-700)}

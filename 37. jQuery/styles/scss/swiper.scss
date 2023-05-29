@@ -30,9 +30,9 @@
 // swiper third
 .swiper.third {display: flex;}
 
-// .swiper-button-prev.partnr::after, 
-// .swiper-button-prev.partnr::after {
-//   content: "" !important; 
-// }
+.swiper-button-prev.partnr::after, 
+.swiper-button-prev.partnr::after {
+  content: "" !important; 
+}
 
 .change:hover {stroke: var(--tomato-light-color-700);}
