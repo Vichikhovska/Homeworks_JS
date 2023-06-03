@@ -7,18 +7,19 @@
   <title>Montichello</title>
   <link rel="icon" type="image/png" href="./assets/svg/Logo.svg" sizes="32x32">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" href=".//styles/css/general.css">
 </head>
 <body>
   <div class="parent">
     <header class="parent_header">
-      <div class="baner">
-        <h1>SIMPLE & MODERN</h1>
-        <span class="baner_text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
-        <svg class="baner_arrow" width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24.9048 19.111C24.9606 19.1669 24.9885 19.231 24.9885 19.3036C24.9885 19.3761 24.9606 19.4403 24.9048 19.4961L21.0041 23.3968C20.9483 23.4526 20.8841 23.4805 20.8116 23.4805C20.7391 23.4805 20.6749 23.4526 20.6191 23.3968L16.7184 19.4961C16.6626 19.4403 16.6347 19.3761 16.6347 19.3036C16.6347 19.231 16.6626 19.1669 16.7184 19.111L17.1369 18.6925C17.1927 18.6367 17.2569 18.6088 17.3295 18.6088C17.402 18.6088 17.4662 18.6367 17.522 18.6925L20.8116 21.9821L24.1012 18.6925C24.157 18.6367 24.2212 18.6088 24.2937 18.6088C24.3663 18.6088 24.4305 18.6367 24.4863 18.6925L24.9048 19.111Z" fill="white"/>
-          <path opacity="0.7" d="M40.5447 20C40.5447 30.7685 31.7958 39.5 21.0011 39.5C10.2064 39.5 1.45746 30.7685 1.45746 20C1.45746 9.23147 10.2064 0.5 21.0011 0.5C31.7958 0.5 40.5447 9.23147 40.5447 20Z" stroke="white"/>
-        </svg>
-      </div>
       <nav class="navigation">
         <div class="navigation_logo">
           <svg width="241" height="54" viewBox="0 0 241 54" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -34,9 +35,9 @@
         <div class="navigation_menu">
           <ul class="navigation_menu_list">
             <li class="navigation_menu_list_item"><a class="navigation_menu_list_item_link" href="#">ABOUT US</a></li>
-            <li class="navigation_menu_list_item"><a class="navigation_menu_list_item_link" href="#">PROJECTS</a></li>
-            <li class="navigation_menu_list_item"><a class="navigation_menu_list_item_link" href="#">NEWS</a></li>
-            <li class="navigation_menu_list_item"><a class="navigation_menu_list_item_link" href="#">CONTACT</a></li>
+            <li class="navigation_menu_list_item"><a class="navigation_menu_list_item_link" data-target=".parent_main_projects" href="#">PROJECTS</a></li>
+            <li class="navigation_menu_list_item"><a class="navigation_menu_list_item_link" data-target=".parent_main_news" href="#">NEWS</a></li>
+            <li class="navigation_menu_list_item"><a class="navigation_menu_list_item_link" data-target=".parent_footer_form" href="#">CONTACT</a></li>
           </ul>
         </div>
         <div class="navigation_social">
@@ -54,24 +55,57 @@
           </svg>
         </div>
       </nav>
+      <div class="swiper first">
+        <div class="swiper-wrapper first-wrapper">
+          <div class="baner swiper-slide">
+            <h1>SIMPLE & MODERN</h1>
+            <h5>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h5>
+          </div>
+          <div class="baner swiper-slide">
+            <h1>EASY & STYLISH</h1>
+            <h5>WE CREATE ELEGANCE DAILY</h5>
+          </div>
+          <div class="baner swiper-slide">
+            <h1>STREAMLINED & CONTEMPORARY</h1>
+            <h5>WE EMBRACE BEAUTY IN EVERY MOMENT</h5>
+          </div>
+          <div class="baner swiper-slide">
+            <h1>EFFORTLESS & SLEEK</h1>
+            <h5>TRANSFORMING THE WORLD WITH STYLE</h5>
+          </div>
+          <div class="baner swiper-slide">
+            <h1>MINIMALISTIC & INNOVATIVE</h1>
+            <h5>MAKING EVERYDAY LIFE MORE BEAUTIFUL</h5>
+          </div>
+        </div>
+        <div class="swiper-button-next first-btn-next">
+          <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.9048 19.111C24.9606 19.1669 24.9885 19.231 24.9885 19.3036C24.9885 19.3761 24.9606 19.4403 24.9048 19.4961L21.0041 23.3968C20.9483 23.4526 20.8841 23.4805 20.8116 23.4805C20.7391 23.4805 20.6749 23.4526 20.6191 23.3968L16.7184 19.4961C16.6626 19.4403 16.6347 19.3761 16.6347 19.3036C16.6347 19.231 16.6626 19.1669 16.7184 19.111L17.1369 18.6925C17.1927 18.6367 17.2569 18.6088 17.3295 18.6088C17.402 18.6088 17.4662 18.6367 17.522 18.6925L20.8116 21.9821L24.1012 18.6925C24.157 18.6367 24.2212 18.6088 24.2937 18.6088C24.3663 18.6088 24.4305 18.6367 24.4863 18.6925L24.9048 19.111Z" fill="white"/>
+            <path opacity="0.7" d="M40.5447 20C40.5447 30.7685 31.7958 39.5 21.0011 39.5C10.2064 39.5 1.45746 30.7685 1.45746 20C1.45746 9.23147 10.2064 0.5 21.0011 0.5C31.7958 0.5 40.5447 9.23147 40.5447 20Z" stroke="white"/>
+          </svg>          
+        </div>
+      </div>
+      <div class="custom-pag swiper-pagination"></div>
     </header>
-    <svg width="100" height="1" viewBox="0 0 100 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <line y1="0.5" x2="100" y2="0.5" stroke="#2C4058"/>
-    </svg>
     <main class="parent_main">
       <section class="parent_main_projects">
-        <h2>What we do</h2>
+        <div class="parent_main_projects_name">
+        <svg class="divider_line" width="100" height="1" viewBox="0 0 100 1" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="0.5" x2="100" y2="0.5" stroke="rgba(44, 64, 88, 1)"/></svg>
+        <h2>WHAT WE DO</h2>
+        </div>
         <div class="parent_main_projects_left">
-          <div class="left"></div>
-          <div class="left_image">
-            <img src="../EXAM_2/assets/img/sect_project/progects_left.png" alt="boll">
+          <div class="parent_main_projects_left_box">
+            <div class="left"></div>
+            <div class="left_image">
+              <img src="../EXAM_2/assets/img/sect_project/progects_left.png" alt="boll">
+            </div>
           </div>
           <div class="left_info">
             <h4>ONE WORLD</h4>
             <h2>TRADE CENTER</h2>
-            <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
-            <button type="button">MORE DETAILS</button>
-            <span>
+            <p class="left_info_os">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+            <button class="just-btn" type="button">MORE DETAILS</button>
+            <span class="location">
               <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.42857 4.5C6.42857 5.68025 5.46596 6.64286 4.28571 6.64286C3.10547 6.64286 2.14286 5.68025 2.14286 4.5C2.14286 3.31975 3.10547 2.35714 4.28571 2.35714C5.46596 2.35714 6.42857 3.31975 6.42857 4.5ZM8.57143 4.5C8.57143 2.13114 6.65458 0.214285 4.28571 0.214285C1.91685 0.214285 0 2.13114 0 4.5C0 5.0106 0.0585938 5.53795 0.276228 5.99833L3.33147 12.4771C3.49888 12.8454 3.88393 13.0714 4.28571 13.0714C4.6875 13.0714 5.07254 12.8454 5.24833 12.4771L8.2952 5.99833C8.51284 5.53795 8.57143 5.0106 8.57143 4.5Z" fill="#2C4058"/>
               </svg>
@@ -80,16 +114,18 @@
           </div>
         </div>
         <div class="parent_main_projects_right">
-          <div class="right"></div>
-          <div class="right_image">
-            <img src="../EXAM_2/assets/img/sect_project/progects_right.png" alt="building">
+          <div class="parent_main_projects_right_box">
+            <div class="right"></div>
+            <div class="right_image">
+              <img src="../EXAM_2/assets/img/sect_project/progects_right.png" alt="building">
+            </div>
           </div>
           <div class="right_info">
             <h4>INTERNATIONAL</h4>
             <h2>COMMERCE CENTRE</h2>
-            <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
-            <button type="button">MORE DETAILS</button>
-            <span>
+            <p class="right_info_os">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+            <button class="just-btn" type="button">MORE DETAILS</button>
+            <span class="location">
               <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.42857 4.5C6.42857 5.68025 5.46596 6.64286 4.28571 6.64286C3.10547 6.64286 2.14286 5.68025 2.14286 4.5C2.14286 3.31975 3.10547 2.35714 4.28571 2.35714C5.46596 2.35714 6.42857 3.31975 6.42857 4.5ZM8.57143 4.5C8.57143 2.13114 6.65458 0.214285 4.28571 0.214285C1.91685 0.214285 0 2.13114 0 4.5C0 5.0106 0.0585938 5.53795 0.276228 5.99833L3.33147 12.4771C3.49888 12.8454 3.88393 13.0714 4.28571 13.0714C4.6875 13.0714 5.07254 12.8454 5.24833 12.4771L8.2952 5.99833C8.51284 5.53795 8.57143 5.0106 8.57143 4.5Z" fill="#2C4058"/>
               </svg>
@@ -101,55 +137,106 @@
       <section class="parent_main_news">
         <div class="parent_main_news_head">
           <svg width="100" height="1" viewBox="0 0 100 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="0.5" x2="100" y2="0.5" stroke="#2C4058"/>
+            <line y1="0.5" x2="100" y2="0.5" stroke="#FFFFFF"/>
           </svg>
           <h2>LATEST NEWS</h2>
         </div>
-        <div class="parent_main_news_body">
-          <div>
-            <div class="first_article">
+        <div class="parent_main_news_body swiper second">
+          <div class="news swiper-wrapper second-wrapper">
+            <div class="first_article swiper-slide">
               <div class="first_article_img">
                 <img src="/EXAM_2/assets/img/sect_news/news_1.png" alt="photo">
               </div>
               <div class="first_article_info">
                 <h3>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
-                <p>Free directories: directories are perfect for customers that are searching for...</p>
+                <p class="first_article_info_os">Free directories: directories are perfect for customers that are searching for...</p>
                 <div class="first_article_info_footer">
                   <img src="/EXAM_2/assets/img/sect_news/photo_1.png" alt="photo">
-                  <span>ALJA BRUN</span>
-                  <span>20 Jan 2020</span>
+                  <div class="first_article_info_footer_item">
+                    <h6>ALJA BRUN</h6>
+                    <span class="date">20 Jan 2020</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="second_article">
+            <div class="second_article swiper-slide">
               <div class="second_article_img">
                 <img src="/EXAM_2/assets/img/sect_news/news_2.png" alt="photo">
               </div>
               <div class="second_article_info">
                 <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
-                <p>Having a home based business is a wonderful asset to your life...</p>
+                <p class="second_article_info_os">Having a home based business is a wonderful asset to your life...</p>
                 <div class="second_article_info_footer">
                   <img src="/EXAM_2/assets/img/sect_news/photo_2.png" alt="photo">
-                  <span>DOMINIC FREEMAN</span>
-                  <span>13 Dec 2019</span>
+                  <div class="second_article_info_footer_item">
+                    <h6>DOMINIC FREEMAN</h6>
+                    <span class="date">13 Dec 2019</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="third_article">
+            <div class="third_article swiper-slide">
               <div class="third_article_img">
                 <img src="/EXAM_2/assets/img/sect_news/news_3.png" alt="photo">
               </div>
               <div class="third_article_info">
-                <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
-                <p>There are many things that are important to catalog design...</p>
+                <h3>THE INCOMPARABLE WONDERS.</h3>
+                <p class="third_article_info_os">Navigation plays a crucial role in enhancing the user experience..</p>
                 <div class="third_article_info_footer">
                   <img src="/EXAM_2/assets/img/sect_news/photo_3.png" alt="photo">
-                  <span>ALICE WARD</span>
-                  <span>30 Nov 2019</span>
+                  <div class="third_article_info_footer_item">
+                    <h6>JONATHAN BAKER</h6>
+                    <span class="date">12 Aug 2022</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fourth_article swiper-slide">
+              <div class="fourth_article_img">
+                <img src="/EXAM_2/assets/img/sect_news/news_4.png" alt="photo">
+              </div>
+              <div class="fourth_article_info">
+                <h3>DISCOVER THE UNRIVALED MAJESTY.</h3>
+                <p class="fourth_article_info_os">Possibilities abound when you explore the vast array of...</p>
+                <div class="fourth_article_info_footer">
+                  <img src="https://picsum.photos/60/60" alt="photo">
+                  <div class="fourth_article_info_footer_item">
+                    <h6>EMILY GARCIA</h6>
+                    <span class="date">5 Mar 2021</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fifth_article swiper-slide">
+              <div class="fifth_article_img">
+                <img src="/EXAM_2/assets/img/sect_news/news_5.jpg" alt="photo">
+              </div>
+              <div class="fifth_article_info">
+                <h3>THE INCOMPARABLE SPLENDOR.</h3>
+                <p class="fifth_article_info_os">Directories provide a seamless experience for users looking to...</p>
+                <div class="fifth_article_info_footer">
+                  <img src="https://picsum.photos/60/60" alt="photo">
+                  <div class="fifth_article_info_footer_item">
+                    <h6>OLIVER MARTIN</h6>
+                    <span class="date">8 Sep 2021</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="news_pag swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-prev news_btn">
+          <svg width="100" height="100" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white"/>
+            <path d="M21.8984 17.25C21.8984 17.1797 21.8672 17.1172 21.8203 17.0703L21.4297 16.6797C21.3828 16.6328 21.3125 16.6016 21.25 16.6016C21.1875 16.6016 21.1172 16.6328 21.0703 16.6797L17.4297 20.3203C17.3828 20.3672 17.3516 20.4375 17.3516 20.5C17.3516 20.5625 17.3828 20.6328 17.4297 20.6797L21.0703 24.3203C21.1172 24.3672 21.1875 24.3984 21.25 24.3984C21.3125 24.3984 21.3828 24.3672 21.4297 24.3203L21.8203 23.9297C21.8672 23.8828 21.8984 23.8125 21.8984 23.75C21.8984 23.6875 21.8672 23.6172 21.8203 23.5703L18.75 20.5L21.8203 17.4297C21.8672 17.3828 21.8984 17.3125 21.8984 17.25Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="swiper-button-next news_btn">
+          <svg width="100" height="100" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white"/>
+            <path d="M22.6484 20.5C22.6484 20.4375 22.6172 20.3672 22.5703 20.3203L18.9297 16.6797C18.8828 16.6328 18.8125 16.6016 18.75 16.6016C18.6875 16.6016 18.6172 16.6328 18.5703 16.6797L18.1797 17.0703C18.1328 17.1172 18.1016 17.1875 18.1016 17.25C18.1016 17.3125 18.1328 17.3828 18.1797 17.4297L21.25 20.5L18.1797 23.5703C18.1328 23.6172 18.1016 23.6875 18.1016 23.75C18.1016 23.8203 18.1328 23.8828 18.1797 23.9297L18.5703 24.3203C18.6172 24.3672 18.6875 24.3984 18.75 24.3984C18.8125 24.3984 18.8828 24.3672 18.9297 24.3203L22.5703 20.6797C22.6172 20.6328 22.6484 20.5625 22.6484 20.5Z" fill="white"/>
+          </svg>
         </div>
       </section>
       <section class="parent_main_gallery">
@@ -157,24 +244,26 @@
           <svg width="100" height="1" viewBox="0 0 100 1" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="0.5" x2="100" y2="0.5" stroke="#2C4058"/>
           </svg>
-          <h2>Gallery</h2>
+          <h2>GALLERY</h2>
         </div>
         <div class="parent_main_gallery_body">
-          <img src="../EXAM_2/assets/img/sect_gallery/photo_1.png" alt="house">
-          <img src="../EXAM_2/assets/img/sect_gallery/photo_2.png" alt="house">
-          <img src="../EXAM_2/assets/img/sect_gallery/photo_3.png" alt="house">
-          <img src="../EXAM_2/assets/img/sect_gallery/photo_4.png" alt="house">
-          <img src="../EXAM_2/assets/img/sect_gallery/photo_5.png" alt="house">
-          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <img class="gallery_foto_1" src="../EXAM_2/assets/img/sect_gallery/photo_1.png" alt="house">
+          <img class="gallery_foto_2" src="../EXAM_2/assets/img/sect_gallery/photo_2.png" alt="house">
+          <img class="gallery_foto_3" src="../EXAM_2/assets/img/sect_gallery/photo_3.png" alt="house">
+          <img class="gallery_foto_4" src="../EXAM_2/assets/img/sect_gallery/photo_4.png" alt="house">
+          <img class="gallery_foto_5" src="../EXAM_2/assets/img/sect_gallery/photo_5.png" alt="house">
+          <svg class="zoom" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M28.4375 52.5C31.5974 52.5 34.7264 51.8776 37.6458 50.6684C40.5652 49.4591 43.2178 47.6867 45.4523 45.4523C47.6867 43.2178 49.4591 40.5652 50.6684 37.6458C51.8776 34.7264 52.5 31.5974 52.5 28.4375C52.5 25.2776 51.8776 22.1486 50.6684 19.2292C49.4591 16.3098 47.6867 13.6572 45.4523 11.4227C43.2178 9.18833 40.5652 7.4159 37.6458 6.20665C34.7264 4.9974 31.5974 4.375 28.4375 4.375C22.0557 4.375 15.9353 6.91015 11.4227 11.4227C6.91015 15.9353 4.375 22.0557 4.375 28.4375C4.375 34.8193 6.91015 40.9397 11.4227 45.4523C15.9353 49.9649 22.0557 52.5 28.4375 52.5ZM56.875 28.4375C56.875 35.9796 53.8789 43.2128 48.5458 48.5458C43.2128 53.8789 35.9796 56.875 28.4375 56.875C20.8954 56.875 13.6622 53.8789 8.32915 48.5458C2.99609 43.2128 0 35.9796 0 28.4375C0 20.8954 2.99609 13.6622 8.32915 8.32915C13.6622 2.99609 20.8954 0 28.4375 0C35.9796 0 43.2128 2.99609 48.5458 8.32915C53.8789 13.6622 56.875 20.8954 56.875 28.4375Z" fill="white"/>
             <path d="M45.255 51.3714C45.3863 51.5464 45.5263 51.7126 45.6838 51.8745L62.5275 68.7182C63.3479 69.5392 64.4607 70.0006 65.6213 70.001C66.7818 70.0014 67.895 69.5408 68.7159 68.7204C69.5369 67.9001 69.9983 66.7872 69.9987 65.6267C69.9991 64.4661 69.5385 63.3529 68.7181 62.532L51.8744 45.6882C51.718 45.5299 51.5498 45.3836 51.3713 45.2507C49.655 47.5908 47.5927 49.6561 45.255 51.3757V51.3714Z" fill="white"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M28.4375 13.125C29.0177 13.125 29.5741 13.3555 29.9843 13.7657C30.3945 14.1759 30.625 14.7323 30.625 15.3125V26.25H41.5625C42.1427 26.25 42.6991 26.4805 43.1093 26.8907C43.5195 27.3009 43.75 27.8573 43.75 28.4375C43.75 29.0177 43.5195 29.5741 43.1093 29.9843C42.6991 30.3945 42.1427 30.625 41.5625 30.625H30.625V41.5625C30.625 42.1427 30.3945 42.6991 29.9843 43.1093C29.5741 43.5195 29.0177 43.75 28.4375 43.75C27.8573 43.75 27.3009 43.5195 26.8907 43.1093C26.4805 42.6991 26.25 42.1427 26.25 41.5625V30.625H15.3125C14.7323 30.625 14.1759 30.3945 13.7657 29.9843C13.3555 29.5741 13.125 29.0177 13.125 28.4375C13.125 27.8573 13.3555 27.3009 13.7657 26.8907C14.1759 26.4805 14.7323 26.25 15.3125 26.25H26.25V15.3125C26.25 14.7323 26.4805 14.1759 26.8907 13.7657C27.3009 13.3555 27.8573 13.125 28.4375 13.125Z" fill="white"/>
           </svg>
         </div>
-        <button type="button">SEE MORE</button>
+        <button class="just-btn" type="button">SEE MORE</button>
       </section>
-      <section class="parent_main_map"></section>
     </main>
+    <section class="parent_main_map">
+      <div id="map"></div>
+    </section>
     <footer class="parent_footer">
       <section class="parent_footer_form">
         <div class="parent_footer_form_head">
@@ -185,40 +274,49 @@
         </div>
         <div class="parent_footer_form_body">
           <div class="form_body_left">
-            <span>
+            <span class="text-form">
               <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.42857 4.5C6.42857 5.68025 5.46596 6.64286 4.28571 6.64286C3.10547 6.64286 2.14286 5.68025 2.14286 4.5C2.14286 3.31975 3.10547 2.35714 4.28571 2.35714C5.46596 2.35714 6.42857 3.31975 6.42857 4.5ZM8.57143 4.5C8.57143 2.13114 6.65458 0.214285 4.28571 0.214285C1.91685 0.214285 0 2.13114 0 4.5C0 5.0106 0.0585938 5.53795 0.276228 5.99833L3.33147 12.4771C3.49888 12.8454 3.88393 13.0714 4.28571 13.0714C4.6875 13.0714 5.07254 12.8454 5.24833 12.4771L8.2952 5.99833C8.51284 5.53795 8.57143 5.0106 8.57143 4.5Z" fill="#2C4058"/></svg>
               91 Nolan Extinsions Suite 670
             </span>
-            <span>
+            <span class="text-form">
               <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="15"><path d="M795-120q-122 0-242.5-60T336-336q-96-96-156-216.5T120-795q0-19.286 12.857-32.143T165-840h140q13.611 0 24.306 9.5Q340-821 343-805l27 126q2 14-.5 25.5T359-634L259-533q56 93 125.5 162T542-254l95-98q10-11 23-15.5t26-1.5l119 26q15.312 3.375 25.156 15.188Q840-316 840-300v135q0 19.286-12.857 32.143T795-120ZM229-588l81-82-23-110H180q0 39 12 85.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z" fill="#2C4058"/></svg>
               +001 356 868 2454
             </span>
-            <span>
+            <span class="text-form">
               <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="15"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v53q0 56-39.5 94.5T744-294q-36 0-68-17.5T627-361q-26 34-65 50.5T480-294q-78 0-132.5-54T293-480q0-78 54.5-133T480-668q78 0 132.5 55T667-480v53q0 31 22.5 52t54.5 21q31 0 53.5-21t22.5-52v-53q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h214v60H480Zm0-274q53 0 90-36.5t37-89.5q0-54-37-91t-90-37q-53 0-90 37t-37 91q0 53 37 89.5t90 36.5Z" fill="#2C4058"/></svg>
               montichello@service.com
             </span>
-            <span>
+            <span class="text-form">
               <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="15"><path d="m627-287 45-45-159-160v-201h-60v225l174 181ZM480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-82 31.5-155t86-127.5Q252-817 325-848.5T480-880q82 0 155 31.5t127.5 86Q817-708 848.5-635T880-480q0 82-31.5 155t-86 127.5Q708-143 635-111.5T480-80Zm0-400Zm0 340q140 0 240-100t100-240q0-140-100-240T480-820q-140 0-240 100T140-480q0 140 100 240t240 100Z" fill="#2C4058"/></svg>
               From 07:05 AM to 19:30 PM
             </span>
           </div>
-          <div class="form_body_right">
-            <input type="name" placeholder="Mollie Medina">
-            <input type="email" placeholder="email">
-            <button type="submit">submit</button>
+          <form class="form_body_right myForm">
+            <input class="input_name" type="text" name="name" placeholder="Mollie Medina" required>
+            <span class="name-error"></span>
+            <input class="input_email" type="email" name="email" placeholder="email" required>
+            <span class="email-error"></span>
+            <button class="submit-btn" type="submit">SUBMIT</button>
+          </form>
+          <div class="hidden successMessage">
+            <p class="sent_msg">Your data has been sent successfully</p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" fill="var(--blue-color-800)"width="60"><path d="M378-246 154-470l43-43 181 181 384-384 43 43-427 427Z"/></svg>
           </div>
         </div>
       </section>
       <section class="parent_footer_info">
-        <svg width="241" height="54" viewBox="0 0 241 54" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect width="241" height="54" fill="url(#pattern0)"/>
-          <defs>
-          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-          <use xlink:href="#image0_1_10" transform="scale(0.00414938 0.0185185)"/>
-          </pattern>
-          <image id="image0_1_10" width="241" height="54" xlink:href="data:image/png;base64,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"/>
-          </defs>
-        </svg>
+        <div class="parent_footer_info_logo">
+          <svg width="241" height="54" viewBox="0 0 241 54" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="241" height="54" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1_10" transform="scale(0.00414938 0.0185185)"/>
+            </pattern>
+            <image id="image0_1_10" width="241" height="54" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAAA2CAYAAAAWJn8FAAAQTklEQVR4nO2dC3gVxRXHTyKvUJRAgaLRKgKtYqxRqA+KUvBVRUFtLWoRi1ir4Au1EAu+0PJQxArWVoxKAa3ioygaLLaKiForKioWFSWCRiKUCBIwQpLpN/rfr9PxnNmdvfeGm8v+vu9+yd07Ozv7mJkz57V5SinKMs4kor8T0fpsa1hCQjaSn4Vt+isR/SoL2pGQ0CTIxk5cS0TLiahnFrQlISHraaxO3Myz/ONEdAIR5WWoPQkJOUNjdeI/EdF+nvs8SkSnZ6g9CQk5Q2N04sOI6Fwius1zv38T0T5E1CZD7UpIyAky3Ym1OPx7/D2OiAZ67j+DiIZlqG0JCTlBpjvxL4jocOP7FCJq6bH/RiL6jIi6ZKBtCQk5QSY7cWsimmRt605Eozzr+QsRDU1juxIScopMduJSIipitp/lWU89ET1DRP3T1K6EhJwiU534u0R0pfDbtTHqex4KMl9TVUJCzpMpt8sHiejnzPZnU5hR9yKi44moDN+/i45toh1F5ofUcwKj8X6NiD6I2I62aMePiGh3bPsPEb1EROVEtCFiPVz7dR0fC+UPZMx0LxPRGmtbKma5d4joLWtbH+M8A57FOUdBL6FOJKIfENGuRNRARKvR9qeIaGtIHXHPh2vjYbjuJkuIaK1n3VHvhS9aAXwwntH9oD/ahvuyAM/pNzus7sRp/hyplGpQ36ROKXVQise6WCnVAf+fxRxDc7Jj/37CPhdGOLY+7lSlVK1Qh2a7UmqGUmr3CPVx7X9VKdVSKD+RKX8WUy4VJjL1PcHU1yfC+fVQSs0LacsGpVSpUqq5o564cG28j6lrQIznMOq98PkMUkotDznXt5VSp9p1pluc1vXdKnha6Rn0DeP7aUQ0wLP+uyKYnLQ9uhWzvTkR/cHzeAFHYIYaFaJdbwa/b23j/kmM4xyC69fUGYZZY1DIebQnoomYkdvmwHnHQT9Pc4hoHhEdELJ/DzhB6X7QItiY7k48TPB51qaiq43vugGT8cD6mJy0uPweEZU4ynSBUs3mUiLa3+NYAYciqqqzxz6FRPQYRG5fLiSiM2Lsly38lIju9ryveon1CBHt0oTPOw76fOfCFOvDeej4X02W6ezEuxHRjcJvN1ihhSOJqFtMk5PuHKeG+FWPsWzLRTEVanoN9xDMZRxrHeupFojI6hjjuNrJ5fsx9tvR7E1E9zruzUZYGziqI3b8evgOhH3qmsD1GuNwgNK6ggpMXBxaV3AFpbkTjxVmq3eJaLrxXYtQ46z9bMVJGLpjneIo08o65s0x3TdHM4oQgu16XyLaA59uaJNNR+tco7IrRmhp8HDRnvksZMqfyJQbH+N4Jteh7TbTMZC2wzlppWclytTjYR4cQclFWKpw52h//pniuWSa7+DZt/kEHbQQz5i+ZsMxyNlcQ0Qd0tWJu0Jc5dCjxXZj+9W42AFtsC7yYTlO1oVeb59ERP2QaMAXvYa+gNmnDLbuCmPbB3gIy5jy56AuX7Q2d1qM/bgZajtTbjNT7osYxwtoK4iFWgq7xLhf2zDg9YRGVw8mN7Fa19zmPGaQ1pLKUUT0sHHP9Ex8DxEdzQxyesAcmi67q+RO+TcietL43h2itM1QRDr5jJ7X46H5tqPMtBQeTK3M6mBt2+SwfyssDU6zBqm2WBsvitEGPQIvJqJZMfZtbI5lBquPHEusTy2X3KjoQf+YkLLLPExgO4qTmONOcJg6lyEO4bfW9hPTMRP3F0RbvSa5zNo2WZiV8iBy+bSn2lKWETM7d4FGz1VGojuzfSE6skQNET3B/NYr4jG52eiPzDlkI4cwbSrHzJtO9D19OuRj29+zEe75ejiknfcz24pT7cS7OEIM74CROqAvFFISvRCy6MMMjFABWtv9oWP/t4nozoj1cy6jrroDuJHUJS2Y3MmsfVrj5n4rYh07ikLmuFGu185IS+GZCLte7zPbOqbaic/XIwGzfQOUHAH6OLdEqO930HJHpd6a7bcI61iCp9D5HjNDDbMtSkcqYLZ9GfGYq7GGtmfk/dH2bKaBaVscxdzOwDZBTxF2vdhnK5U1caFDm3ktFCUBQyLmzOoEjZu07uR4DoqSwD1Pr8PvY5Qses39IhQHUeDE7ih23yOYbas8zucJaNNHW9t97K47As7lMBNi7SZB227i60bZ2OhBugquxCa9sUyQ6M1sX5VKJ76OUfwQNMemyNoaM2xULoGW9x2Pfa60vL9Gwb85aJ82Z1zleX6LcbFNm+dB0KaWC/v8kBkkFJxFfBiLG9bHc78dycvMsY+BpLZcaNdADKw+Sqg1gl9+U+MZSF0mV+FZ4XQj+jm8nNm+JK44rZ2zRwi/XW4Z2nUH25MptxJO3TbNY6TyWQOlWcD6wBAOtEb8c8869Uz8ArN9pqDE6YbAD9vR4QUPZVpAHby2mlLu7SXMeebjmnD3/0K4EGqdxo8bqY3ZxCNMW/pBr2NPrvmIzT+a2Wd23Jl4qqBlfswSB7QTx2+EOsZghO7PiIrHQeM9z6NNUyzvr1kQ4zejXXHQy4J/WPt1hCnsfojyDRChhwprljjOHgTp4WzM+tmYWtimHvdgqrW9B+7zbDhqtIFPdbA0KcLsMwHLszBPq/YR9QPPCIogm18S0ZGO36tg2gnjDNj2JWotPZFeNi1lLBeXok/ch8lpLywNubrLv5okYkRbnCBEWOjonu5W2buFsouMMlOEMu87Inqkz2lKqWLjt32VUntYZUuZY7mimO4KiSxxcbdnFFMpU+56R/1RI2fiRiL57qujkV6Jea10RNNeaYxi4q4NF8UUxpsRo5jC2MjUU6KU2hLz/HR9XeNEMTVnRtqA6RCRAw7CKGfTYIm64zHa2XSN4Vf9qGXGWhVDlLUZaTmsRKUcImOqjGekgWxlO67/Ss/2bcF+HzWR80wXyzCDS/7REpshzXxlzvTtxCOE/NGfwr3O5Bahfh198arx/XMh6oig4OHstS4eh9dUutiGCzYxonnqSyjyBqXJ0aEe4lS2a1wDPoYnFqfv4KjAmnhxo7c0O5gPcf7diK15FUrP54INPmviDpZMbzLOUhwNEBbhWwWn71mw79pueG3gV+sTqvUGMiO0Eka4jYzJJ0zpVQ93tzKsWQYiJ7bJKgwgt0bM8FDDtGOjUPZT+H/fw9QRhSrmWFFH/zj7VkOLPwADfz9LX1CPWWgmwhZdrrE+5jkT7tqsi1Efl2mlOkY9mx2/LYUW/xzc56MsndMXkMZmw5z6f9prn/Q8dwji4etYnAfGfj0wvCnE7o53hAT2gpnCnr0VvL2ej9pQeMMMRpszRZERtfVJE5opdwQtELXTCQP56ogRSzsrrRHB1BLXaZXLYShqJy7GyMkFbfe1RCG9hrydKacf8u+FzB4zGdsZQYQ4VPAKkhiG0SvVvEcJCVlN1DXxbUIHfsjqwG0dM+24COJfqSDa9ozhVz1bUKwlJOQUUTrxKUKGylrGNXCskMniDcyyYVQ5XDknCE72EnUYYFw2wISEJk9YJ24JAz7HFCvqogtcJjmu8BCFpwkulx0RQ+zDInTinS13U8JORFgnvhT2WptKy82R4BbGOenP97RzbndkCRkhRE25SF4Dk5DTuDpxZ8EcRDC3mOvb3kKS7zpG5I7CQsHBopnD2USiAmlMfETxhIQmg6sT3yjE9r4MpVFAHjoWl+HwTs9oJJNRglr92JAkeRxlSHWTkJBzSJ24p5CkXSEI37RLDRbiRjfFWMOarHQkUp8qJIiXCGyTvqJ4QkLWw9mJ8+DSxWl15yCyJqAVZtq9mbKjEdyeCm1QP+d6eQ3j6ukiD/v4DCzdoDG3TWPFMMAHDguF+NjpVQ63UuXWImTPZE/LlbWOSapXaES7KDjTcGGK+8HxJDDTtUL9UjRPIRSSrzO/dWYGvXcYDyZXvPDusGxsxhKJ8/QqhBPIe8a2Eivtkk0/vGtJwtWmKHSB11Q1Iqw4jzLz3q7DPZE4ALHmq+C0xDlndMO1Da6R9Eztg7IET763uJn4dKEDb2F8nC8TOnBFzHSrNjUIWeQoFXJCSyiEJJ7ssc9w4QXnV1kxz8XCWxt2Q97gyfjLvarkZLiotsOHW7sXQzJqhzzXM4Xke0FChWBp0ylkGTES58G537bA8Y5GG9sJiksp2cIpeAY+w3mXC3HFxQgbNLNcSBkyCZ6AZSEJE3wTQJicjcmhCu2W0kqNwzVpD1dJ+13cAdfhHlRCYn3IfAWLwXDcrwDpmToDwUXBcafZN6/AMXtONhJ+E0w+0sUq9cgrFYaO272I8atujaAEH7/qZYhVfjpG5IjNh4hrneEoE6SROUdILh+wJEKk1FtGHSvgl7yUKbcMMdw3hdRXgLdMlCFgZK71+xp8tuJhdrXfpiV84QcYb3xYisAQziNvJt6T9bMIQSMjke51LCPVpEpbTGLmWxnmCHVuMq7JXETQ2RyMjh5YW56G09K5SBcVl4V4HvRxF9id+EphdquCo3o7jPKF0FBziq8XmRu+PzpdfsiLswqEte4iIUfxmbgYPn7V9+KlZ9MjlHVxO9bmnCjqy0XGg/MUXv9iUwRdRQEGD8kvfA6yq/QPCYofgsBzLZY+wHTiVOgBBaj5ypYVQjonwuSwENfzIsdxO0BqWIGUPlqsjBL4H5USY2DoikGFEHhiL18KcD/y4BK8mjlGHyaF8TxIP6l0YjJeg7rd7MRFjpDAztYsLKHwAJkyfwc86JlI9JYHka2X4x0/NuuxNCiKeE4uLkYHuDfFem6PMBMHnXgIJCBXov3R6JTSbKyv26+RCrcEYlxvDMDpoJJJAtcsxOFnMe4jN1MHXIDnaAz+6uWD5GAUh2rjlUJrMRldgOdf6sRdMblx2UYqmUmxk5BTrMHKptrKESRyDdqq46+HmWviSWlIMfogkzBteIYzNZbESOc6K00OIFsxaPko2OLyL4jugzHYcuuqgG0QO6VOfDycYObiQR2BASldrEM9QThqHtaGD4TUfyuUVpwiswAzzw1o882IjJJm9zgsR6csMaKHpGe3GvdjDAaoQ5ky5ZAW9zXOYYKwBFtiLQ0HOZykxmMQ1rqDDcFMfHiM1yva1DIzeT4OlmluwADCvXSKQ2uAX4ECzyWKVwqayQpj5n8fN9L19kOXyLceIZ7mDGRnc6wxsp+sxfpxCBNfvMZYU1Zi3Xggc8y+eBDMc1uJDmHPEptCpJwKYfsIKH/ORSdeAPHdpsaY5RQGE26p0xfv5TXjeHW545g3I2y2lgeT8L7kMBSCZq5HOGs+lnKcpts870ugAHvNyhFWC0XZeEyQ9Rh8VjD1LYCO4hHMyvPxsgObKvuZ1CYmfYFfSkOO4EmMomuA8FqTTDDN4a4pMQ4jo0+IY0JCVqE7sRYr/5xio9bh3TJ2GOGTyPDQGNRB3PKxD3ZB1kVJA5mQkPU0g/HYlNE/czS6VhAvX2E6cD60rEG62IaQl5FtdZillCN1jbmvq+0cFdAKF4bUn5CQtfik58lV2kADKYVcJiRkNU0hKXmmqYGNj8vimZCQ9SSd+GseNgz7CQlNiqQTf42Cp9TAKIUTErKJpBP/j6VQ8nFx0QkJ2QkR/Rc9Y+jCoJojAAAAAABJRU5ErkJggg=="/>
+            </defs>
+          </svg>
+          <span class="foot_text">Copyrights © 2020 Montichello</span>
+        </div>
         <div class="parent_footer_info_contact">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M23.7188 21H21.375V28H18.25V21H15.7188V18.0938H18.25V15.9062C18.25 15.0729 18.4062 14.3646 18.7188 13.7812C19.0312 13.1979 19.4688 12.7604 20.0312 12.4688C20.6146 12.1562 21.2812 12 22.0312 12C22.3646 12 22.7188 12.0208 23.0938 12.0625C23.4688 12.0833 23.7604 12.1146 23.9688 12.1562L24.2812 12.1875V14.6562H23.0312C22.4479 14.6562 22.0208 14.8125 21.75 15.125C21.5 15.4167 21.375 15.7812 21.375 16.2188V18.0938H24.1562L23.7188 21Z" fill="white"/>
@@ -233,10 +331,12 @@
             <circle opacity="0.4" cx="20" cy="20" r="19.5" stroke="white"/>
           </svg>
         </div>
-        <span>Copyrights © 2020 Montichello</span>
       </section>
     </footer>
   </div>
+
+  <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    ({key: "AIzaSyDxspzB36tcbMX0qj42V478o6JMebskE-I", v: "beta"});</script>
   <script src="index.js"></script>
 </body>
 </html>
