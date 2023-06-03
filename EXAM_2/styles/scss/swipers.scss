@@ -1,0 +1,106 @@
+//swiper header
+.first {
+  margin-top: 180px;
+  width: 950px;
+  height: 420px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.baner.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.swiper-pagination::after {content: "" !important;}
+
+.custom-pag .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--base-color-100);
+  background-color: transparent;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet { margin: 40px;}
+
+.custom-pag .swiper-pagination-bullet-active {background-color: var(--base-color-100);}
+
+.swiper-pagination-vertical.swiper-pagination-bullets {
+  width: 20px;
+  top: 50%;
+  right: 100px;
+}
+
+.first-btn-next::after {content: "" !important;}
+
+.first-btn-next {
+  position: absolute;
+  width: 50px;
+  top: 90%;
+  left: 50%;
+}
+
+//swiper news
+.swiper.second {
+  width: 100%;
+  max-width: 1170px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.swiper-pagination.news_pag::after {content: "" !important;}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+
+  width: 100%;
+  max-width: 350px;
+  bottom: 0;
+  left: 40%;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--base-color-100);
+  background-color: transparent;
+}
+
+.news_pag .swiper-pagination-bullet-active {background-color: var(--base-color-100);}
+
+.swiper-button-prev.news_btn::after {content: "" !important;}
+.swiper-button-next.news_btn::after {content: "" !important;}
+
+.swiper-button-prev.news_btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 5%;
+}
+
+.swiper-button-next.news_btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 90%;
+}

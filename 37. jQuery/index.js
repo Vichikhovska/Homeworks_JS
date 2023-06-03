@@ -24,11 +24,11 @@ const secondSwiper = new Swiper(".second", {
 //third swiper
 const thirdSwiper = new Swiper(".third", {
   loop: true,
-  slidesPerView: 9,
+  slidesPerView: 4,
   spaceBetween: 20,
 
   navigation: {
-    nextEl: ".swiper-button-next .partnr",
-    prevEl: ".swiper-button-prev .partnr",
+    nextEl: ".swiper-button-next.partnr",
+    prevEl: ".swiper-button-prev.partnr",
   },
 });

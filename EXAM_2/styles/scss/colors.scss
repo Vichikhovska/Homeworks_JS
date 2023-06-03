@@ -1,0 +1,19 @@
+:root {
+  //base colors
+  --base-color-900:rgba(0, 0, 0, 1);
+  --base-color-100:rgba(255, 255, 255, 1);
+
+  //blue color
+  --blue-color-800:rgba(44, 64, 88, 1);
+  --blue-color-700-50: rgba(75, 85, 98, .5);
+  --blue-color-800-20:rgba(44, 64, 88, .2);
+  --blue-color-500:rgba(85, 183, 255, 1);
+
+  //blueviolet color
+  --blueviolet-color-700:rgba(126, 90, 255, 1);
+
+  //gradients
+  --gradient-header:linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  --gradient-news:linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+  --gradient-footer:linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+}

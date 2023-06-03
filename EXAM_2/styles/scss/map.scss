@@ -1,0 +1,25 @@
+.parent_main_map {
+  width: 100%;
+  max-width:1600px;
+  height: 700px;
+}
+
+#map {
+  height: 700px;
+  width: 100%; 
+}
+
+.custom_marker {
+  width: 32px;
+  height: 32px;
+  display: block;
+  color: aqua;
+}
+
+.custom_marker .custom_block {
+  width: 35px;
+  height: 35px;
+  border: 8px solid var(--base-color-100);
+  border-radius: 50%;
+  background-color: var(--blueviolet-color-700);
+}
