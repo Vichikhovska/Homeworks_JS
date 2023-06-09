@@ -3,10 +3,11 @@
   padding: 0;
 }
 
+body { background-color: rgb(245, 211, 237);}
+
 .parent {
   width: 100%;
   max-width: 1400px;
-  background-color: rgb(245, 211, 237);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,8 +44,15 @@ label {
   gap: 10px;
 }
 
+li {
+  color: rgb(99, 96, 96);
+  font-size: 20px;
+  font-weight: 700;
+}
+
 button {
   width: 100%;
+  max-width: 150px;
   height: 30px;
   background: rgb(240, 144, 208);
   border-radius: 10px;

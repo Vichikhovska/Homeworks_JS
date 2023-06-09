@@ -32,10 +32,48 @@ const search = async (movieName, movieType) => {
     resultList.innerHTML = "";
 
     if (filmList) {
-      filmList.forEach((film) => {
+      filmList.forEach(async (film) => {
         const listItem = document.createElement("li");
         listItem.textContent = film.Title;
         resultList.appendChild(listItem);
+
+        const detailsBtn = document.createElement("button");
+        detailsBtn.textContent = "Details";
+        
+        detailsBtn.addEventListener("click", async () => {
+          const filmDetails = await getFilmDetails(film.imdbID);
+          console.log(filmDetails)
+          if (filmDetails) {
+            const detailsElement = document.createElement("div");
+            detailsElement.classList.add("filmDetails");
+
+            // for (const key in filmDetails) {
+            //   const propertyElement = document.createElement("p")
+            //   propertyElement.textContent = `${key}: ${filmDetails[key]}`;
+            //   detailsElement.appendChild(propertyElement);
+            // }
+
+            const year = document.createElement("p");
+            year.textContent = `Year: ${filmDetails.Year}`;
+            detailsElement.appendChild(year);
+
+            const imdbRating = document.createElement("p");
+            imdbRating.textContent = `Raiting: ${filmDetails.imdbRating}`;
+            detailsElement.appendChild(imdbRating);
+
+            const plot = document.createElement("p");
+            plot.textContent = `Plot: ${filmDetails.Plot}`;
+            detailsElement.appendChild(plot);
+
+            const posterElement = document.createElement("img");
+            posterElement.src = filmDetails.Poster;
+            detailsElement.appendChild(posterElement);
+
+            listItem.insertAdjacentElement("afterend", detailsElement);
+          }
+        });
+
+        listItem.appendChild(detailsBtn);
       });
     } else {
       const notFound = document.querySelector(".notFound");
@@ -43,5 +81,15 @@ const search = async (movieName, movieType) => {
     }
   } catch (error) {
     console.error(error);
+  }
+};
+
+const getFilmDetails = async (imdbID) => {
+  try {
+    const resp = await axios.get(`${BASE_URL}i=${imdbID}`);
+    return resp.data;
+  } catch (error) {
+    console.error(error);
+    return null;
   }
 };
