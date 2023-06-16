@@ -1,0 +1,23 @@
+.table-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(51, 49, 49);
+}
+
+th {
+  background-color: white;
+  font-size: large;
+}
